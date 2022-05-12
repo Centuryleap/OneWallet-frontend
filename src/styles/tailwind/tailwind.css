@@ -60,16 +60,34 @@
     @apply text-white;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-medium;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-[32px];
+  }
+
+  h4 {
+    @apply text-xl lg:text-2xl leading-9 lg:leading-[48px];
+  }
+
+  .explainer {
+    @apply font-light lg:text-xl leading-7 lg:leading-8;
   }
 }
 
 @layer utilities {
+  .border-radius {
+    @apply rounded-[48px] md:rounded-[54px] lg:rounded-[64px];
+  }
   /* Rows */
   .inline-start {
     @apply inline-flex items-center justify-start;
