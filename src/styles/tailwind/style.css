@@ -658,8 +658,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 
-.w-3 {
-  width: 0.75rem;
+.h-40 {
+  height: 10rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-36 {
@@ -668,6 +672,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .border-collapse {
@@ -720,8 +732,37 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[5\] {
+  border-radius: 5;
+}
+
+.rounded-\[52\] {
+  border-radius: 52;
+}
+
+.rounded-\[52px\] {
+  border-radius: 52px;
+}
+
+.rounded-\[48px\] {
+  border-radius: 48px;
+}
+
 .border {
   border-width: 1px;
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 1 125 / var(--tw-bg-opacity));
 }
 
 .py-10 {
@@ -732,6 +773,14 @@ h1, h2, h3, h4, h5, h6 {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-xs {
@@ -858,16 +907,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 768px) {
-  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:py-12 {
@@ -877,18 +926,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-10 {
-    width: 2.5rem;
-  }
-
   .lg\:w-auto {
     width: auto;
   }
 
-  .lg\:space-x-\[18px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(18px * var(--tw-space-x-reverse));
-    margin-left: calc(18px * calc(1 - var(--tw-space-x-reverse)));
+  .lg\:w-10 {
+    width: 2.5rem;
   }
 
   .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -897,30 +940,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .lg\:space-x-\[18px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(18px * var(--tw-space-x-reverse));
+    margin-left: calc(18px * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:px-\[100px\] {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .xl\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
   .xl\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .xl\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
