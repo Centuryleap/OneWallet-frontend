@@ -1048,6 +1048,10 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
