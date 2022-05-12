@@ -652,6 +652,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
