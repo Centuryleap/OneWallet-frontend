@@ -1,0 +1,25 @@
+{
+  "name": "onewallet-frontend",
+  "version": "1.0.0",
+  "description": "Repository of  website frontend for OneWallet",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles/tailwind/tailwind.css -o ./src/styles/tailwind/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Centuryleap/OneWallet-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Centuryleap/OneWallet-frontend/issues"
+  },
+  "homepage": "https://github.com/Centuryleap/OneWallet-frontend#readme"
+}
