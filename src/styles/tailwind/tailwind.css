@@ -4,14 +4,11 @@
 
 @layer base {
   * {
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
   }
 
   html {
@@ -47,11 +44,11 @@
   }
 
   .constraint {
-    @apply container mx-auto px-6;
+    @apply container mx-auto px-6 lg:px-5 xl:px-[100px] 2xl:px-[228px];
   }
 
-  .explainer {
-    @apply text-sm md:text-xs leading-normal lg:text-sm md:leading-6 lg:leading-8 uppercase;
+  p {
+    @apply text-[#EEEEEE];
   }
 
   h1,
