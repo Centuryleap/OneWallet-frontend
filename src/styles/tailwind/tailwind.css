@@ -59,6 +59,14 @@
   h6 {
     @apply text-white;
   }
+
+  h1, h2, h3 {
+    @apply font-medium;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl
+  }
 }
 
 @layer utilities {
