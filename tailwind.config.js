@@ -4,6 +4,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Gotham", "sans-serif"],
+      },
+
+      colors: {
+        'primary': '#24017D',
       }
     },
   },
