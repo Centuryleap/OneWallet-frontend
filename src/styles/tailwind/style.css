@@ -1918,6 +1918,18 @@ h4 {
     max-width: 488px;
   }
 
+  .lg\:max-w-\[92\%\] {
+    max-width: 92%;
+  }
+
+  .lg\:max-w-\[91\%\] {
+    max-width: 91%;
+  }
+
+  .lg\:max-w-\[91\.5\%\] {
+    max-width: 91.5%;
+  }
+
   .lg\:-translate-y-\[45\%\] {
     --tw-translate-y: -45%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2062,6 +2074,22 @@ h4 {
     padding-bottom: 74px;
   }
 
+  .lg\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .lg\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 4rem;
+  }
+
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2107,5 +2135,17 @@ h4 {
   .xl\:px-\[100px\] {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .xl\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .xl\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .xl\:pr-28 {
+    padding-right: 7rem;
   }
 }
