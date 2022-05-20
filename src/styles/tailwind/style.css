@@ -761,6 +761,14 @@ h4 {
   z-index: 30;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
+.z-\[-2\] {
+  z-index: -2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -810,6 +818,58 @@ h4 {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
+}
+
+.-mt-40 {
+  margin-top: -10rem;
+}
+
+.-mt-52 {
+  margin-top: -13rem;
+}
+
+.-mt-48 {
+  margin-top: -12rem;
+}
+
+.-mb-48 {
+  margin-bottom: -12rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.-mb-\[48\] {
+  margin-bottom: -48;
+}
+
+.-mb-\[50\] {
+  margin-bottom: -50;
+}
+
+.-mb-\[50\%\] {
+  margin-bottom: -50%;
+}
+
+.-mb-\[70\%\] {
+  margin-bottom: -70%;
+}
+
+.-mb-\[60\%\] {
+  margin-bottom: -60%;
+}
+
+.-mb-\[55\%\] {
+  margin-bottom: -55%;
+}
+
+.-mb-\[58\%\] {
+  margin-bottom: -58%;
 }
 
 .block {
@@ -1404,6 +1464,42 @@ h4 {
 
   .md\:mb-10 {
     margin-bottom: 2.5rem;
+  }
+
+  .md\:-mr-10 {
+    margin-right: -2.5rem;
+  }
+
+  .md\:-mr-40 {
+    margin-right: -10rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:-mb-\[50\] {
+    margin-bottom: -50;
+  }
+
+  .md\:-mb-\[50\%\] {
+    margin-bottom: -50%;
+  }
+
+  .md\:-mb-\[55\%\] {
+    margin-bottom: -55%;
+  }
+
+  .md\:-mb-\[56\%\] {
+    margin-bottom: -56%;
+  }
+
+  .md\:mt-28 {
+    margin-top: 7rem;
   }
 
   .md\:block {
