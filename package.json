@@ -11,7 +11,7 @@
     "tailwindcss": "^3.0.24"
   },
   "scripts": {
-    "start": "parcel",
+    "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html",
     "build": "tailwindcss -i ./src/styles/tailwind/tailwind.css -o ./src/styles/tailwind/style.css --watch"
   },
