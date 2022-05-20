@@ -68,7 +68,7 @@
   }
 
   h1 {
-    @apply text-3xl sm:text-4xl md:text-[44px] lg:text-5xl xl:text-[56px] sm:leading-normal lg:leading-tight
+    @apply text-3xl sm:text-4xl md:text-[44px] lg:text-5xl xl:text-[56px] sm:leading-normal lg:leading-tight;
   }
 
   h2 {
@@ -84,13 +84,13 @@
   }
 
   .explainer {
-    @apply font-light text-sm lg:text-base xl:text-xl leading-6 lg:leading-8;
+    @apply font-light text-sm lg:text-base xl:text-xl leading-6 lg:leading-8 xl:leading-[32px];
   }
 }
 
 @layer utilities {
   .border-radius {
-    @apply rounded-[48px] md:rounded-[54px] lg:rounded-[64px];
+    @apply rounded-[40px] md:rounded-[54px] lg:rounded-[64px];
   }
   /* Rows */
   .inline-start {
@@ -127,6 +127,10 @@
 
   .between {
     @apply flex flex-row items-center justify-between;
+  }
+
+  .between-start {
+    @apply flex items-start justify-between;
   }
 
   .evenly {
