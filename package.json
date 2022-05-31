@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Centuryleap/OneWallet-frontend#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "gsap": "^3.10.4",
     "vanilla-tilt": "^1.7.2"
   }

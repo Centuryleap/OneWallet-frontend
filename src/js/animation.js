@@ -1,3 +1,4 @@
+// import { AOS } from "aos";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -12,6 +13,7 @@ for (i = 0; i < element.length; ++i) {
 }
 
 
+// cubic - bezier(.17, .67, .59, 1.59)
 // Hero Animation
 gsap.fromTo(".hero-container", {
   opacity: 0,
