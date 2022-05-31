@@ -1,4 +1,3 @@
-// import { AOS } from "aos";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -26,17 +25,6 @@ gsap.fromTo(".hero-container", {
   ease: "power2.out",
 })
 
-gsap.to(".anime-image img", {
-  scrollTrigger: {
-    trigger: ".anime-image",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: 2,
-    toggleActions: "restart none none none"
-  },
-  y: '-50%',
-  // duration: 2,
-})
 
 tl.fromTo(".hero-text-anime h1", {
   y: 150,
@@ -65,7 +53,7 @@ const st = gsap.timeline({
     scrub: true,
     pin: true,
     // pinType: "transform",
-    markers: false,
+    // markers: true,
   },
 })
 
@@ -90,5 +78,25 @@ st.fromTo(".middle-card", {
   }, {
     x: 0,
     delay: -2,
-    duration: 2
+    duration: 2,
   })
+
+ScrollTrigger.refresh()
+
+
+
+//  Scrolling image animation on the lower section of the page
+gsap.to(".anime-image img", {
+  scrollTrigger: {
+    trigger: ".anime-image",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 2,
+    markers: true,
+    // pinType: "transform",
+
+    // toggleActions: "restart none none none"
+  },
+  y: '-50%',
+  // duration: 2,
+})
