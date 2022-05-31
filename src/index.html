@@ -122,7 +122,7 @@
     </div>
   </section>
 
-  <section class="bg-[#111111]">
+  <section class="card-types-pin bg-[#111111]">
     <div class="constraint card-types pt-12 md:pt-14 lg:pt-16 xl:pt-[72px] pb-32 md:pb-36 lg:pb-40 xl:pb-44">
       <div class="card-types-container col-center">
         <div class="text-center">
@@ -135,12 +135,12 @@
         </div>
 
         <div class="relative flex justify-center items-end mt-16 lg:mt-20 xl:mt-[6.625rem]">
-          <img src="./assets/images/Visa-straight.png" alt="Visacard" class="w-40 sm:w-60 md:w-[272px] xl:w-auto" />
+          <img src="./assets/images/Visa-straight.png" alt="Visacard" class="left-card w-40 sm:w-60 md:w-[272px] xl:w-auto" />
 
           <img src="./assets/images/Mastercard-straight.png" alt="Mastercard"
-            class="-mx-28 md:-mx-40 -mb-1 md:-mb-2 z-30 w-48 sm:w-72 md:w-80 xl:w-96" />
+            class="middle-card -mx-28 md:-mx-40 -mb-1 md:-mb-2 z-30 w-48 sm:w-72 md:w-80 xl:w-96" />
 
-          <img src="./assets/images/Verve-straight.png" alt="Vervecard" class="w-40 sm:w-60 md:w-[272px] xl:w-auto" />
+          <img src="./assets/images/Verve-straight.png" alt="Vervecard" class="right-card w-40 sm:w-60 md:w-[272px] xl:w-auto" />
         </div>
       </div>
     </div>
@@ -285,60 +285,7 @@
     </div>
   </footer>
 
-  <script type="module">
-    import { gsap } from "gsap/dist/gsap";
-    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-    gsap.registerPlugin(ScrollTrigger);
-    import VanillaTilt from 'vanilla-tilt';
-    const element = document.querySelectorAll(".js-tilt");
-    const tl = gsap.timeline()
-
-    for (i = 0; i < element.length; ++i) {
-      VanillaTilt.init(element);
-    }
-
-    gsap.fromTo(".hero-container", {
-      opacity: 0,
-      y: 300,
-    }, {
-      opacity: 1,
-      duration: 1.5,
-      y: 0,
-      ease: "power2.out",
-    })
-
-    gsap.to(".anime-image img", {
-      scrollTrigger: {
-        trigger: ".anime-image",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 2,
-        toggleActions: "restart none none none"
-      },
-      y: '-50%',
-      // duration: 2,
-    })
-
-    tl.fromTo(".hero-text-anime h1", {
-      y: 150,
-      opacity: 0,
-      skewY: 20,
-    }, {
-      y: 0,
-      opacity: 1,
-      skewY: 0,
-      duration: 1,
-      ease: "power2.out",
-    })
-
-      .to(".hero-text-anime .explainer, .download-icons, nav", {
-        opacity: 1,
-        ease: "power2.out",
-        addCLass: ".animate__animated .animate__bounce",
-      })
-
-      
-  </script>
+  <script type="module" src="./js/animation.js"></script>
 </body>
 
 </html>
