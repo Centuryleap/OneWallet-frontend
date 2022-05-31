@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/Centuryleap/OneWallet-frontend/issues"
   },
-  "homepage": "https://github.com/Centuryleap/OneWallet-frontend#readme"
+  "homepage": "https://github.com/Centuryleap/OneWallet-frontend#readme",
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "vanilla-tilt": "^1.7.2"
+  }
 }

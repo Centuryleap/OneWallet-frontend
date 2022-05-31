@@ -765,6 +765,10 @@ h4 {
   display: none;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-72 {
   height: 18rem;
 }
@@ -777,16 +781,16 @@ h4 {
   max-height: 400px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .w-auto {
   width: auto;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-64 {
@@ -957,6 +961,16 @@ h4 {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
 .bg-primary {

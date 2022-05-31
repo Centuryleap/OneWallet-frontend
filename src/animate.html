@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <link rel="stylesheet" href="styles/tailwind/tailwind.css" />
+</head>
+
+<body>
+  <div class=" w-full bg-blue-500 center">
+    <div class="first min-w-[580px] min-h-[370px] bg-red-700">
+      <!-- <div class="box">
+        <img class="translate-y-[58%] relative md:translate-y-[380px] md:ml-10" src="./assets/images/Mastercard.png" alt="">
+        <img class="" src="./assets/images/Visa.png" alt="">
+      </div> -->
+    </div>
+
+    <button class="button p-2 bg-white text-black">
+      click me
+    </button>
+  </div>
+
+  <div class="second w-full bg-blue-300">
+    <div class="new w-[500px] h-[500px]"></div>
+  </div>
+
+  <script type="module">
+    import { gsap } from "gsap/dist/gsap";
+    import { Flip } from "gsap/dist/Flip";
+
+    gsap.registerPlugin(Flip);
+    const box = document.querySelector('.box'), first = document.querySelector('.first'), second = document.querySelector('.new');
+
+    document.querySelector('.button').addEventListener('click', () => {
+      const state = Flip.getState(box);
+      (box.parentNode === first ? second : first).appendChild(box);
+
+      Flip.from(state, { duration: 2, ease: "power2.inOut", scale: 2 });
+
+      // console.log(gsap, Flip)
+    })
+  </script>
+</body>
+
+</html>
