@@ -63,7 +63,7 @@ const st = gsap.timeline({
     scrub: true,
     pin: true,
     // pinType: "transform",
-    markers: true,
+    markers: false,
   },
 })
 
