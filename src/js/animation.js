@@ -1,6 +1,8 @@
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { TextPlugin } from "gsap/dist/TextPlugin";
+
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 
 // Vanilla tilt
@@ -53,7 +55,7 @@ const st = gsap.timeline({
     scrub: true,
     pin: true,
     // pinType: "transform",
-    // markers: true,
+    // markers: false,
   },
 })
 
@@ -92,7 +94,7 @@ gsap.to(".anime-image img", {
     start: "top bottom",
     end: "bottom top",
     scrub: 2,
-    markers: true,
+    markers: false,
     // pinType: "transform",
 
     // toggleActions: "restart none none none"
