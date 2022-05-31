@@ -8,6 +8,8 @@
   <title>One Wallet</title>
   <link rel="stylesheet" href="styles/tailwind/tailwind.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -71,7 +73,7 @@
     <div class="big-features-container space-y-40 lgspace-y-72 xl:space-y-80">
       <div class="save-card-details md:between lg:between-start space-y-[6.25rem] md:space-y-0">
         <div class="text-left md:col-start w-auto max-w-[350px] md:max-w-[320px] lg:max-w-[460px] lg:mt-10">
-          <h2>
+          <h2 data-aos="fade-right" data-aos-duration="1000">
             Save and access your card <br class="hidden sm:block md:hidden" />
             details when you need it
           </h2>
@@ -290,7 +292,6 @@
   <script type="module" src="./js/animation.js"></script>
   <script>
     AOS.init();
-
   </script>
 </body>
 

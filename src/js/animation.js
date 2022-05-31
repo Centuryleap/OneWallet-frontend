@@ -3,6 +3,7 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 // Vanilla tilt
 import VanillaTilt from 'vanilla-tilt';
 const element = document.querySelectorAll(".js-tilt");
@@ -52,7 +53,6 @@ tl.fromTo(".hero-text-anime h1", {
   .to(".hero-text-anime .explainer, .download-icons, nav", {
     opacity: 1,
     ease: "power2.out",
-    addCLass: ".animate__animated .animate__bounce",
   })
 
 
