@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>One Wallet</title>
   <link rel="stylesheet" href="styles/tailwind/tailwind.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -35,16 +36,24 @@
     <div class="hero-container col-center text-center pt-20 md:pt-28 lg:pt-36 xl:pt-40">
       <div class="top space-y-10 lg:space-y-12 max-w-[360px] md:max-w-none">
         <div class="hero-text-anime texts space-y-4 lg:space-y-5">
-          <h1>
-            Manage all your cards <br> on one platform
-          </h1>
+          <div class="overflow-hidden">
+            <h1>
+              Manage all your cards
+            </h1>
+          </div>
 
-          <p class="explainer">
+          <div class="overflow-hidden">
+            <h1>
+              on one platform
+            </h1>
+          </div>
+
+          <p class="explainer opacity-0">
             Hold and manage all your card information safely, on one platform.
           </p>
         </div>
 
-        <div class="download-icons center space-x-3">
+        <div class="download-icons opacity-0 center space-x-3">
           <img class="w-32 md:w-36 lg:w-40" src="./assets/svg/Google-button.svg" alt="">
           <img class="w-32 md:w-36 lg:w-40" src="./assets/svg/Apple-button.svg" alt="">
         </div>
@@ -277,15 +286,26 @@
   </footer>
 
   <script type="module">
-    import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    import { gsap } from "gsap/dist/gsap";
+    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
     gsap.registerPlugin(ScrollTrigger);
     import VanillaTilt from 'vanilla-tilt';
     const element = document.querySelectorAll(".js-tilt");
+    const tl = gsap.timeline()
 
     for (i = 0; i < element.length; ++i) {
       VanillaTilt.init(element);
     }
+
+    gsap.fromTo(".hero-container", {
+      opacity: 0,
+      y: 300,
+    }, {
+      opacity: 1,
+      duration: 1.5,
+      y: 0,
+      ease: "power2.out",
+    })
 
     gsap.to(".anime-image img", {
       scrollTrigger: {
@@ -298,6 +318,26 @@
       y: '-50%',
       // duration: 2,
     })
+
+    tl.fromTo(".hero-text-anime h1", {
+      y: 150,
+      opacity: 0,
+      skewY: 20,
+    }, {
+      y: 0,
+      opacity: 1,
+      skewY: 0,
+      duration: 1,
+      ease: "power2.out",
+    })
+
+      .to(".hero-text-anime .explainer, .download-icons, nav", {
+        opacity: 1,
+        ease: "power2.out",
+        addCLass: ".animate__animated .animate__bounce",
+      })
+
+      
   </script>
 </body>
 
