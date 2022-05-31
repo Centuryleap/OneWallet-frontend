@@ -102,3 +102,20 @@ gsap.to(".anime-image img", {
   y: '-50%',
   // duration: 2,
 })
+
+const ft = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".copyright",
+    start: "top 90%",
+  },
+});
+ft.to('.copyright', {
+
+  duration: 2,
+  text: {
+    value: "Copyright © 2022 One wallet.All rights reserved.",
+  },
+  ease: "power2.out",
+})
+
+  .fromTo(".socials", { opacity: 0 }, { opacity: 1, duration: 1, ease: "power2.out" })
