@@ -83,6 +83,19 @@ st.fromTo(".middle-card", {
     duration: 2,
   })
 
+  .to(".ct-explainer", {
+    text: {
+      value: 'One wallet gives you the benefits of adding your different card types; Master cards, verve cards, and visa cards.'
+    },
+    delay: -1.5,
+    duration: 2,
+  })
+
+  .fromTo(".height-decoy h2",{ opacity: 0 }, {
+    delay: -3,
+    opacity: 1,
+  })
+
 ScrollTrigger.refresh()
 
 
