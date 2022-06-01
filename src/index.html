@@ -1,337 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One Wallet</title>
-    <link rel="stylesheet" href="styles/tailwind/style.css" />
-    <link rel="stylesheet" href="styles/tailwind/main.css">
-  </head>
 
-  <body>
-    <section>
-      <div class="banner">
-        <div class="navbar">
-          <img src="assets/svg/logo.svg" class="logo">
-          <ul>
-            <li><a href="#" class="button0">How it works</a></li>
-            <li><a href="#" class="button0">How it works</a></li>
-            <li><a href="#"><button class="button1">Get the app</button></a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Wallet</title>
+  <link rel="stylesheet" href="styles/tailwind/tailwind.css" />
+  <link rel="stylesheet" href="styles/tailwind/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <nav class="constraint">
+    <div class="nav-container between py-4 lg:py-5 xl:py-6">
+      <div class="left-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./assets/svg/logo.svg" alt="logo" />
+          </a>
         </div>
-    
-        <div class="content">
-          <h1>Manage all your cards on one platform</h1>
-          <p>Hold and manage all your cards information <br> safely, on one platform.</p>
-    
-          <div class="center space-x-4 mt-7">
-    
-            <button><a href="#"><img src="assets/svg/Google-button.svg" alt=""></a></button>
-    
-            <button><a href="#"><img src="assets/svg/Apple-button.svg" alt=""></a></button>
-          </div>
-    
-          <div class="down">
-            <div class="center center mid">
-              <div class="picturecontainer center">
-                <img src="assets/svg/cards/Visa-card.svg" class="picture1">
-                <img src="assets/svg/cards/Mastercard.svg" class="picture2">
-              </div>
-            </div>
-          </div>
-    
-        </div>
-    
-        
       </div>
-    </section>
 
-    <section class="constraint big-features">
-      <div
-        class="big-features-container col-center md:between space-y-[6.25rem] md:gap-[3.125rem] my-[8.125rem]"
-      >
+      <div class="right-container">
+        <button
+          class="button text-[10px] lg:text-xs py-2 lg:py-2.5 px-[18px] lg:px-[22px] rounded-lg lg:rounded-xl bg-primary lg:leading-5">
+          <a href="animate.html">
+            Get the app
+          </a>
+        </button>
+      </div>
+    </div>
+  </nav>
 
+  <section class="hero constraint">
+    <div class="hero-container col-center text-center pt-20 md:pt-28 lg:pt-36 xl:pt-40">
+      <div class="top space-y-10 lg:space-y-12 max-w-[360px] md:max-w-none">
+        <div class="hero-text-anime texts space-y-4 lg:space-y-5">
+          <div class="overflow-hidden">
+            <h1>
+              Manage all your cards
+            </h1>
+          </div>
+
+          <div class="overflow-hidden">
+            <h1>
+              on one platform
+            </h1>
+          </div>
+
+          <p class="explainer opacity-0">
+            Hold and manage all your card information safely, on one platform.
+          </p>
+        </div>
+
+        <div class="download-icons opacity-0 center space-x-3">
+          <img class="w-32 md:w-36 lg:w-40" src="./assets/svg/Google-button.svg" alt="">
+          <img class="w-32 md:w-36 lg:w-40" src="./assets/svg/Apple-button.svg" alt="">
+        </div>
+      </div>
+
+
+      <div class="bottom relative mt-20 md:mt-28">
+        <img class="-mb-[58%] relative md:-mb-[56%] md:ml-10" src="./assets/images/Mastercard.png" alt="">
+        <img class="" src="./assets/images/Visa.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="constraint big-features pt-[130px] pb-28 lg:pt-[150px] lg:pb-32 xl:pb-40">
+    <div class="big-features-container space-y-40 lgspace-y-72 xl:space-y-80">
+      <div class="save-card-details md:between lg:between-start space-y-[6.25rem] md:space-y-0">
         <div
-          class="text-center md:text-left md:col-start lg:min-w-[45%] w-auto max-w-[420px]"
-        >
-          <h2>
+          class="text-left md:col-start w-auto max-w-[350px] md:max-w-[320px] lg:max-w-[460px] lg:mt-10 overflow-hidden">
+          <h2 data-aos="fade-right" data-aos-duration="1000">
             Save and access your card <br class="hidden sm:block md:hidden" />
             details when you need it
           </h2>
 
-          <p class="explainer mt-6 lg:max-w-[85%]">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+            class="explainer mt-4 lg:mt-6 lg:pr-20">
+            One wallet allows you to view the important details in all your cards in one place. Save your cards into the
+            app and get a full snapshot of your transactions and finances whenever you want.
           </p>
         </div>
 
-        <div class="relative z-20 center w-full">
-          <img
-            src="./assets/svg/Teardrop.svg"
-            alt=""
-            class="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[23.5rem] lg:max-w-[471px]"
-          />
+        <div class="js-tilt images-container end w-full">
+          <div class="relative center">
+            <img data-aos="fade-in" data-aos-duration="1000" src="./assets/svg/Teardrop.svg" alt=""
+              class="w-64 md:w-72 lg:w-[420px] xl:w-[470px]" />
 
-          <img
-            src="./assets/images/iPhone 13.png"
-            alt="One Wallet does the job"
-            class="relative z-20 max-w-[260px] w-[70%] md:max-w-[19.75rem]"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="constraint access-cards">
-      <div
-        class="access-cards-containier evenly flex-wrap-reverse md:flex-nowrap gap-[6.25rem] md:gap-[3.125rem] mt-[8.125rem] md:mb-[8.125rem]"
-      >
-        <div class="relative z-20 center md:min-w-[50%]">
-          <div
-            class="relative z-10 bg-primary md:border-radius md:w-full md:max-w-[29.25rem] w-[100vw] h-[33.75rem]"
-          ></div>
-          <div
-            class="absolute overflow-hidden md:overflow-visible h-full md:w-[29.25rem] w-[100vw]"
-          >
-            <img
-              src="./assets/svg/cards/Visa-card.svg"
-              alt="Visacard"
-              class="absolute top-[58%] -translate-y-[42%] lg:top-[55%] lg:-translate-y-[45%] left-[53%] -translate-x-[47%] lg:left-[55.5%] lg:-translate-x-[44.5%] lg:scale-[1.3] z-20 w-[40rem]"
-            />
-
-            <img
-              src="./assets/svg/cards/Mastercard.svg"
-              alt="Mastercard"
-              class="absolute top-[53%] -translate-y-[47%] lg:top-[49%] lg:-translate-y-[51%] left-[54%] -translate-x-[46%] lg:left-[56.5%] lg:-translate-x-[43.5%] scale-[0.85] lg:scale-[1.15] z-20 w-[40rem]"
-            />
+            <img data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="500"
+              src="./assets/images/iPhone 13.png" alt="One Wallet does the job"
+              class="absolute z-20 max-w-[260px] w-44 md:w-[200px] lg:max-w-none lg:w-[280px] xl:w-[316px]" />
           </div>
         </div>
+      </div>
 
-        <div class="text-center md:text-left md:col-start w-auto max-w-[420px]">
-          <h2>
-            Quickly access your card <br class="hidden sm:block md:hidden" />
+      <div class="access-containier md:flex justify-between md:items-center md:justify-start space-y-14 md:space-y-0">
+        <div
+          class="text-left w-auto max-w-[350px] md:max-w-[320px] lg:max-w-[420px] md:-translate-x-14 lg:-translate-x-20 overflow-hidden">
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            Quickly access your card <br class="" />
             for online payment
           </h2>
 
-          <p class="explainer mt-6 lg:max-w-[90%]">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+            class="explainer mt-4 lg:mt-6 lg:pr-10 xl:pr-5">
+            Save and access all your cards on the app
+            and get quick access to them for every
+            online payment, and manage your money
+            wherever you are, whenever you want!
           </p>
         </div>
-      </div>
-    </section>
 
-    <section class="bg-[#111111]">
-      <div class="constraint card-types">
-        <div class="card-types-container col-center">
-          <div class="text-center mt-[4.5rem]">
-            <h2>Card Types</h2>
-
-            <p class="explainer max-w-[27em] mt-6">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-          </div>
-
-          <div
-            class="relative flex justify-center items-end mt-[6.625rem] mb-44"
-          >
-            <img
-              src="./assets/svg/cards/Visa-card-straight.svg"
-              alt="Visacard"
-              class="w-40 sm:w-60 md:w-80"
-            />
-
-            <img
-              src="./assets/svg/cards/Mastercards-straight.svg"
-              alt="Mastercard"
-              class="-mx-28 md:-mx-40 -mb-1 md:-mb-2 z-30 w-44 sm:w-72 md:w-96"
-            />
-
-            <img
-              src="./assets/svg/cards/Verve.svg"
-              alt="Vervecard"
-              class="w-40 sm:w-60 md:w-80"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="constraint">
-      <div class="features-backup">
-        <div class="features-backup-container pt-16 md:pt-20 lg:pt-24">
-          <div class="features-section pb-16 md:pb-20 lg:pb-24">
-            <h3 class="header mb-12 md:mb-14 lg:mb-16">App Features</h3>
-
-            <div
-              class="features space-y-10 lg:space-y-0 lg:flex justify-between items-start"
-            >
-              <div
-                class="colored-feature w-full lg:w-max pt-12 md:pt-14 lg:pt-16 pl-6 md:pl-8 lg:pl-10 pr-8 md:pr-10 lg:pr-12 bg-primary border-radius pb-16 lg:pb-20"
-              >
-                <img
-                  class="w-16 mb-8 md:mb-10 lg:mb-12"
-                  src="./assets/svg/icons/Card-icon.svg"
-                  alt=""
-                />
-
-                <div class="texts max-w-[320px] sm:max-w-[400px]">
-                  <h4>Copy card details</h4>
-
-                  <p class="explainer">
-                    Lorem ipsum dolor sit amet, <br class="hidden lg:block" />
-                    consectetur adipiscing elit. <br class="hidden lg:block" />
-                    Venenatis scelerisque at
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="bottom-right space-y-10 lg:space-y-0 lg:start items-start lg:space-x-5 xl:space-x-8"
-              >
-                <div
-                  class="security-feature pt-12 md:pt-14 lg:pt-16 pl-6 md:pl-8 lg:pl-10"
-                >
-                  <img
-                    class="w-16 mb-8 md:mb-10 lg:mb-12"
-                    src="./assets/svg/icons/Security-icon.svg"
-                    alt=""
-                  />
-
-                  <div class="texts max-w-[320px] sm:max-w-[400px]">
-                    <h4>Security</h4>
-
-                    <p class="explainer">
-                      Lorem ipsum dolor sit amet, <br class="hidden lg:block" />
-                      consectetur adipiscing elit.
-                      <br class="hidden lg:block" />
-                      Venenatis scelerisque at
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="backup-feature pt-12 md:pt-14 lg:pt-16 pl-6 md:pl-8 lg:pl-10"
-                >
-                  <img
-                    class="w-16 mb-8 md:mb-10 lg:mb-12"
-                    src="./assets/svg/icons/Security-icon.svg"
-                    alt=""
-                  />
-
-                  <div class="texts max-w-[320px] sm:max-w-[400px]">
-                    <h4>Back up data</h4>
-
-                    <p class="explainer">
-                      Lorem ipsum dolor sit amet, <br class="hidden lg:block" />
-                      consectetur adipiscing elit.
-                      <br class="hidden lg:block" />
-                      Venenatis scelerisque at
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="backup-section py-16 md:py-[72px] lg:py-[84px] col-center md:block"
-          >
-            <div
-              class="texts space-y-3 md:space-y-0 text-center max-w-[470px] md:max-w-none md:between md:text-left md:space-x-14 lg:space-x-36"
-            >
-              <h3 class="whitespace-nowrap">
-                You’ve got backup when <br class="" />
-                you don’t have a card
-              </h3>
-
-              <p class="explainer">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Venenatis scelerisque at quam congue posuere libero in sit quam.
-              </p>
+        <div class="js-tilt image-container relative end md:w-full md:block md:order-first">
+          <div class="relative end md:center w-full max-w-[320px] md:w-auto lg:max-w-[450px] xl:max-w-[524px]">
+            <div data-aos="fade-in" data-aos-duration="1000"
+              class="bg-primary border-radius h-72 md:h-[350px] lg:h-[450px] xl:h-[540px] w-[70%] md:w-4/5 mr-14 lg:w-[350px] xl:w-full">
             </div>
 
-            <div
-              class="image w-full h-44 sm:h-52 md:h-64 lg:h-[400px] max-h-[400px] mt-14 lg:mt-16 bg-primary rounded-lg overflow-hidden"
-            >
-              <img src="./assets/images/Cover.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="constraint">
-      <div
-        class="get-the-app-container pt-16 md:pt-20 lg:pt-[100px] pb-24 md:pb-28 lg:pb-[120px]"
-      >
-        <div
-          class="get-the-app w-full pt-16 md:pt-20 lg:pt-24 pb-14 md:pb-16 lg:pb-[74px] bg-primary border-radius col-center space-y-10 md:space-y-12 lg:space-y-[52px]"
-        >
-          <div
-            class="texts space-y-1.5 md:space-y-2 text-center max-w-[370px] md:max-w-[420px] lg:max-w-[488px] px-5 lg:px-0"
-          >
-            <h2>Get the app</h2>
-
-            <p class="text-xs md:text-sm lg:text-base font-light lg:leading-7">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor
-              <br class="hidden lg:block" />
-              do amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-          </div>
-
-          <div class="buttons center space-x-2.5 md:space-x-3">
-            <button>
-              <img
-                class="w-32 md:w-36 lg:w-40"
-                src="./assets/svg/Light-Google-Button.svg"
-                alt=""
-              />
-            </button>
-
-            <button>
-              <img
-                class="w-32 md:w-36 lg:w-40"
-                src="./assets/svg/Light-apple-Button.svg"
-                alt=""
-              />
-            </button>
+            <img data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500"
+              class="absolute w-72 md:w-80 lg:w-[420px] xl:w-[580px] xl:ml-10 xl:mt-14"
+              src="./assets/images/Decoy-card.png" alt="">
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <footer class="footer">
-      <div
-        class="footer-container center py-10 md:py-12 lg:py-14 xl:py-16 col-center space-y-5 md:space-y-6 lg:space-y-8"
-      >
-        <div class="logo">
-          <img class="w-32 lg:w-auto" src="./assets/svg/logo.svg" alt="" />
+  <section class="card-types-pin bg-[#111111]">
+    <div class="constraint card-types pt-12 md:pt-14 lg:pt-16 xl:pt-[72px] pb-32 md:pb-36 lg:pb-40 xl:pb-44">
+      <div class="card-types-container col-center">
+        <div class="text-center height-decoy">
+          <h2>Card Types</h2>
+
+          <p class="ct-explainer explainer max-w-[27em] mt-3 md:mt-4 lg:mt-5 xl:mt-6">
+            
+          </p>
         </div>
 
-        <p class="copyright text-xs leading-6">
-          Copyright © 2022 One wallet.All rights reserved
-        </p>
+        <div class="relative flex justify-center items-end mt-16 lg:mt-20 xl:mt-[6.625rem]">
+          <img src="./assets/images/Visa-straight.png" alt="Visacard"
+            class="left-card w-40 sm:w-60 md:w-[272px] xl:w-auto" />
 
-        <div class="socials center space-x-3.5 md:space-x-4 lg:space-x-[18px]">
-          <a href="/" class="icon w-8 lg:w-10">
-            <img src="./assets/svg/icons/Instagram.svg" alt="" />
-          </a>
+          <img src="./assets/images/Mastercard-straight.png" alt="Mastercard"
+            class="middle-card -mx-28 md:-mx-40 -mb-1 md:-mb-2 z-30 w-48 sm:w-72 md:w-80 xl:w-96" />
 
-          <a href="/" class="icon w-8 lg:w-10">
-            <img src="./assets/svg/icons/facebook.svg" alt="" />
-          </a>
-
-          <a href="/" class="icon w-8 lg:w-10">
-            <img src="./assets/svg/icons/twitter.svg" alt="" />
-          </a>
-
-          <a href="/" class="icon w-8 lg:w-10">
-            <img src="./assets/svg/icons/youtube.svg" alt="" />
-          </a>
+          <img src="./assets/images/Verve-straight.png" alt="Vervecard"
+            class="right-card w-40 sm:w-60 md:w-[272px] xl:w-auto" />
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <section class="constraint">
+    <div class="features-backup">
+      <div class="features-backup-container pt-16 md:pt-20 lg:pt-24">
+        <div class="features-section pb-16 md:pb-20 lg:pb-24 overflow-hidden">
+          <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="150"
+            class="header mb-12 md:mb-14 lg:mb-16">App Features</h3>
+
+          <div class="features space-y-10 lg:space-y-0 lg:flex justify-between items-start">
+            <div data-aos="fade-in" data-aos-duration="1000"
+              class="js-tilt colored-feature w-full lg:w-max pt-12 md:pt-14 lg:pt-16 pl-6 md:pl-8 lg:pl-10 pr-8 md:pr-10 lg:pr-12 bg-primary border-radius pb-16 lg:pb-20">
+              <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="w-16 mb-8 md:mb-10 lg:mb-12"
+                src="./assets/svg/icons/Card-icon.svg" alt="" />
+
+              <div class="texts max-w-[320px] sm:max-w-[400px] overflow-hidden">
+                <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Copy card details</h4>
+
+                <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" class="explainer">
+                  Copies and saves card<br class="hidden lg:block" />
+                  details to make easy, quick, <br class="hidden lg:block" />
+                  and secure online payment
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bottom-right space-y-10 md:space-y-0 md:flex justify-between lg:start items-start lg:items-start md:space-x-14 lg:space-x-10 xl:space-x-14 lg:w-3/5">
+              <div class="security-feature pt-12 md:pt-14 lg:pt-16 pl-6 md:pl-8 lg:pl-10">
+                <img data-aos="zoom-in" data-aos-duration="1000" class="w-16 mb-8 md:mb-10 lg:mb-12"
+                  src="./assets/svg/icons/Security-icon.svg" alt="" />
+
+                <div class="texts max-w-[320px] sm:max-w-[400px] overflow-hidden">
+                  <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Security</h4>
+
+                  <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" class="explainer">
+                    We've taken several steps <br class="hidden lg:block" />
+                    to help safeguard your
+                    <br class="hidden lg:block" />
+                    sensitive card-related <br class="hidden lg:block" />information
+                  </p>
+                </div>
+              </div>
+
+              <div class="backup-feature pt-12 md:pt-14 lg:pt-16 pl-6 md:pl-8 lg:pl-10">
+                <img data-aos="zoom-in" data-aos-duration="1000" class="w-16 mb-8 md:mb-10 lg:mb-12"
+                  src="./assets/svg/icons/Cloud-icon.svg" alt="" />
+
+                <div class="texts max-w-[320px] sm:max-w-[400px] overflow-hidden">
+                  <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Back up data</h4>
+
+                  <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" class="explainer">
+                    You can back up your card- <br class="hidden lg:block" />
+                    related information, which
+                    <br class="hidden lg:block" />
+                    will always come in handy <br class="hidden lg:block" />
+                    when you don't have a card.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backup-section py-16 md:py-[72px] lg:py-[84px] col-center md:block">
+          <div
+            class="overflow-hidden texts space-y-3 md:space-y-0 text-center max-w-[470px] md:max-w-none md:between md:text-left md:space-x-14 lg:space-x-36">
+            <h3 data-aos="fade-right" data-aos-duration="1000" class="whitespace-nowrap">
+              You’ve got backup when <br class="" />
+              you don’t have a card
+            </h3>
+
+            <p data-aos="fade-left" data-aos-duration="1000" class="explainer max-w-[512px]">
+              Water spills, life happens, cards go missing. If it ever happens to you, one wallet got you backed up.
+            </p>
+          </div>
+
+          <div
+            class="anime-image image w-full h-52 md:h-64 lg:h-[400px] max-h-[400px] mt-14 lg:mt-16 bg-[#111111] rounded-lg overflow-hidden">
+            <img src="./assets/images/Cover.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="constraint">
+    <div class="get-the-app-container pt-16 md:pt-20 lg:pt-[100px] pb-24 md:pb-28 lg:pb-[120px]">
+      <div
+        class="get-the-app w-full pt-16 md:pt-20 lg:pt-24 pb-14 md:pb-16 lg:pb-[74px] bg-primary border-radius col-center space-y-10 md:space-y-12 lg:space-y-[52px]">
+        <div
+          class="texts space-y-1.5 md:space-y-2 text-center max-w-[370px] md:max-w-[420px] lg:max-w-[488px] px-5 lg:px-0">
+          <h2>Get the app</h2>
+
+          <p class="text-xs md:text-sm lg:text-base font-light lg:leading-7">
+            It takes only a few minutes to start enjoying the benefits of
+            <br class="hidden lg:block" />
+            managing all your card information safely on one platform.
+          </p>
+        </div>
+
+        <div class="buttons center space-x-2.5 md:space-x-3">
+          <button>
+            <img class="w-32 md:w-36 lg:w-40" src="./assets/svg/Light-Google-Button.svg" alt="" />
+          </button>
+
+          <button>
+            <img class="w-32 md:w-36 lg:w-40" src="./assets/svg/Light-Apple-Button.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div
+      class="footer-container center py-10 md:py-12 lg:py-14 xl:py-16 col-center space-y-5 md:space-y-6 lg:space-y-8">
+      <div class="logo">
+        <img class="w-32 lg:w-auto" src="./assets/svg/logo.svg" alt="" />
+      </div>
+
+      <p class="copyright text-xs leading-6">
+         
+      </p>
+
+      <div class="socials center space-x-3.5 md:space-x-4 lg:space-x-[18px]">
+        <a href="/" class="icon w-8 lg:w-10">
+          <img src="./assets/svg/icons/Instagram.svg" alt="" />
+        </a>
+
+        <a href="/" class="icon w-8 lg:w-10">
+          <img src="./assets/svg/icons/Facebook.svg" alt="" />
+        </a>
+
+        <a href="/" class="icon w-8 lg:w-10">
+          <img src="./assets/svg/icons/Twitter.svg" alt="" />
+        </a>
+
+        <a href="/" class="icon w-8 lg:w-10">
+          <img src="./assets/svg/icons/Youtube.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/animation.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+
 </html>
