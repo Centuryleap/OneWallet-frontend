@@ -765,8 +765,8 @@ h4 {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-72 {
@@ -781,8 +781,16 @@ h4 {
   max-height: 400px;
 }
 
+.min-h-\[370px\] {
+  min-height: 370px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-32 {
@@ -825,6 +833,10 @@ h4 {
   width: 2rem;
 }
 
+.min-w-\[580px\] {
+  min-width: 580px;
+}
+
 .max-w-\[360px\] {
   max-width: 360px;
 }
@@ -855,6 +867,15 @@ h4 {
 
 .max-w-\[370px\] {
   max-width: 370px;
+}
+
+.translate-y-\[58\%\] {
+  --tw-translate-y: 58%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .items-start {
@@ -968,6 +989,16 @@ h4 {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
@@ -981,6 +1012,10 @@ h4 {
 .bg-\[\#111111\] {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-4 {
@@ -1082,6 +1117,15 @@ h4 {
   line-height: 1.5rem;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
 .border-radius {
   border-radius: 40px;
 }
@@ -1162,16 +1206,16 @@ h4 {
     margin-right: -10rem;
   }
 
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .md\:mt-28 {
     margin-top: 7rem;
   }
 
   .md\:-mb-\[56\%\] {
     margin-bottom: -56%;
-  }
-
-  .md\:ml-10 {
-    margin-left: 2.5rem;
   }
 
   .md\:mt-4 {
@@ -1252,6 +1296,11 @@ h4 {
 
   .md\:max-w-\[420px\] {
     max-width: 420px;
+  }
+
+  .md\:translate-y-\[380px\] {
+    --tw-translate-y: 380px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:-translate-x-14 {
